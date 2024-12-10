@@ -3,19 +3,17 @@ class Heroi{
     constructor (nome, idade, tipo){
         this.nome = nome 
         this.idade = idade
+        this.tipo = tipo
         
         switch (tipo) {
             case "mago":
-                this.tipo = tipo 
                 this.ataque = "usou magia"
                 break
-            case "monge":
-                this.tipo = tipo 
+            case "monge": 
                 this.ataque = "usou espadausou artes marciais"
                 break
             case "ninja":
                 this.ataque = "usou shuriken"
-                this.tipo = tipo 
                 break
             default:
                 this.tipo = "guerreiro"
